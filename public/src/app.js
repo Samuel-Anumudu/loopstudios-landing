@@ -1,6 +1,6 @@
 const menuClose = document.querySelector('.close')
 const menuOpen = document.querySelector('.open')
-const mainNav = document.querySelector('.main-nav')
+const mainNav = document.querySelector('.nav')
 const header = document.querySelector('.header')
 const heroText = document.querySelector('.hero-text')
 const htmlElement = document.querySelector('html')

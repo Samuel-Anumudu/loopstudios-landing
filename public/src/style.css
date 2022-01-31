@@ -73,7 +73,6 @@ header {
 }
 
 .open,
-#img-desktop,
 .btn-desktop {
   display: none;
 }
@@ -85,24 +84,24 @@ header {
   padding-top: 1.7em;
 }
 
-.main-nav {
+.nav {
   display: none;
   padding-top: 8.5em;
 }
 
-.main-nav ul {
+.nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.main-nav ul li {
+.nav ul li {
   text-transform: uppercase;
   font-weight: 100;
   padding-bottom: 1.5em;
 }
 
-.main-nav ul li a {
+.nav ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 1.1rem;
@@ -110,7 +109,7 @@ header {
   border: none;
   outline: none;
 }
-.main-nav ul li a:hover::after {
+.nav ul li a:hover::after {
   content: '';
   width: 35px;
   position: absolute;
@@ -205,12 +204,12 @@ figure {
   cursor: pointer;
 }
 
-.image #zoom-in img {
+.image .zoom-in img {
   transform: scale(1);
   transition: 0.3s ease-in-out;
 }
 
-.image #zoom-in:hover img {
+.image .zoom-in:hover img {
   transform: scale(1.2);
   filter: brightness(100%);
 }
@@ -371,6 +370,10 @@ footer {
   color: #666;
 }
 
+img.img-desktop {
+  display: none;
+}
+
 @media (min-width: 768px) {
   header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -389,23 +392,23 @@ footer {
     padding: 0;
   }
 
-  .main-nav {
+  .nav {
     display: flex !important;
     padding: 0;
   }
 
-  .main-nav__ul {
+  .nav-ul {
     display: flex;
     align-items: center;
   }
 
-  .main-nav ul li {
+  .nav ul li {
     padding-bottom: 0;
     text-transform: none;
     font-weight: 400;
   }
 
-  .main-nav__ul li:not(:last-child) a {
+  .nav-ul li:not(:last-child) a {
     margin-right: 1.2em;
   }
 
@@ -417,8 +420,8 @@ footer {
   }
 
   .hero-text {
-    max-width: 400px;
-    margin-top: 11em;
+    max-width: 500px;
+    margin-top: 14em;
   }
 
   .hero-text h1 {
@@ -456,7 +459,7 @@ footer {
   .text-inside-image {
     font-size: 2em;
     max-width: 180px;
-    top: 140px;
+    top: 150px;
     left: 30px;
   }
 
@@ -547,11 +550,11 @@ footer {
     font-size: 3rem;
   }
 
-  .main-nav ul li a {
+  .nav ul li a {
     font-size: 1rem;
   }
 
-  .main-nav ul li a:hover::after {
+  .nav ul li a:hover::after {
     width: 27px;
     left: 23%;
     top: 140%;
@@ -632,18 +635,15 @@ footer {
     padding: 2em 1em 0 1em;
   }
 
-  #img-mobile {
-    display: none;
-  }
-
   .btn-mobile {
     display: none;
   }
+
   .btn-desktop {
     display: block;
   }
 
-  #img-desktop {
+  img.img-desktop {
     display: block;
   }
 
@@ -704,5 +704,9 @@ footer {
     100% {
       width: 23px;
     }
+  }
+
+  img.img-mobile {
+    display: none;
   }
 }
