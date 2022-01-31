@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://loopstudios-app.herokuapp.com/]
+- Live Site URL: [https://loopstudios-vr.herokuapp.com/]
 
 ## My process
 
